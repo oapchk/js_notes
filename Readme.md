@@ -13,8 +13,9 @@
 
 ## Functions
 
-1.Named Functions 3. Anonymus Functions
--classic
--arrow functions
+1. Named Functions
+2. Anonymus Functions
+   -classic
+   -arrow functions
 
 ![functions.png](functions.png)
