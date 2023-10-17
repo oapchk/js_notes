@@ -19,3 +19,21 @@
    -arrow functions
 
 ![functions.png](functions.png)
+
+## Logic
+
+|  x  |  y  | AND && |
+| :-: | :-: | :----: |
+|  1  |  1  |   1    |
+|  1  |  0  |   0    |
+|  0  |  1  |   0    |
+|  0  |  0  |   0    |
+
+|  x  |  y  | OR  |
+| :-: | :-: | :-: |
+|  1  |  1  |  1  |
+|  1  |  0  |  0  |
+|  0  |  1  |  1  |
+|  0  |  0  |  0  |
+
+[Prawa de Morgana](https://pl.wikipedia.org/wiki/Prawa_De_Morgana)
