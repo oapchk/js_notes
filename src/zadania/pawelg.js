@@ -122,6 +122,11 @@ activeIn80s.forEach((band) => {
   console.log(band.name);
 });
 
+// const activeIn80sNames = rock_bands
+//   .filter((band) => band.years_active.includes("198") || band.years_active.includes("Since"))
+//   .map((band) => band.name);
+// console.log(activeIn80sNames);
+
 //2. Które zespoły powielają nazwę kapeli "name" w  albumie "best_album ?
 const albumNameDuplicate = rock_bands.filter((band) =>
   band.best_album.includes(band.name)
@@ -131,16 +136,10 @@ albumNameDuplicate.forEach((band) => {
   console.log(band.name);
 });
 
-// // //3. Policz ilu artystów we wszystkich kapelach miało/ma na imie John
-
-// // let count = 0;
-// // const membersWithJohn = rock_bands.filter((band) => {
-// //   if (band.members.filter((member) => member.toLowerCase().includes("john"))) {
-// //     count++;
-// //   }
-// //   return count;
-// // });
-// // console.log(count);
+// const albumNameDuplicate = rock_bands
+//   .filter((band) => band.best_album.includes(band.name))
+//   .map((band) => band.name);
+// console.log(albumNameDuplicate);
 
 // // // 1 Jakie zespoły rockowe były aktywne w latach 80. XX wieku,
 // // // zgodnie z informacjami dostępnymi w liście "rock_bands"?
