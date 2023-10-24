@@ -58,3 +58,11 @@ class Click {
 
 const tag = new Click('[type="submit"');
 tag.click(); // to jest tak naprawde this.click
+
+// Zrob pierwsza litere duża
+// string bo ala ma kota jest stringiem; prototype dowiazujemy do klasy string; capitaliza nasza nazwa
+String.prototype.capitalize = function () {
+  return this[0].toUpperCase() + this.slice(1);
+};
+
+"ala ma kota".capitalize();
