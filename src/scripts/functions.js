@@ -80,3 +80,30 @@ function myLord() {
 }
 
 console.log(myLord());
+
+//////PALINDROM
+// const isPalindrome = (text) => text.toLowerCase()===text.toLowerCase().split("").reverse().join("")
+
+// [1,2,3,4].reduce((acc,ce, index,arr)=> acc + ce,5)
+// Array.prototype.myReduce = function (cb, initialValue = undefined) {
+//   let acc = initialValue ? initialValue : this[0];
+
+//   for (let i = initialValue ? 0 : 1; i < this.length; i++) {
+//     acc = cb(acc, this[i], i, this)
+//   }
+//   return acc;
+// };
+
+const props = { name: "Janusz", age: 34 };
+function sentence({ name, age }) {
+  return `Mam na imię ${name} i mam lat ${age}.`;
+}
+
+sentence(props);
+
+//druga wersja gorsza
+// function sentence({ name: firstName = "Janusz", age: goldenAge = 42 } = {}) {
+//   return `Mam na imię ${name} i mam lat ${age}.`;
+// }
+
+// sentence(props);
