@@ -141,8 +141,23 @@ const filmy = [
   },
 ];
 
-console.log("pytanie 1: określ średnią długość tytułów filmów");
-console.log(
-  "pytanie 2: sprawdź czy na tej liście są co najmniej dwa filmy od tego samego reżysera"
+// console.log("pytanie 1: określ średnią długość tytułów filmów");
+
+const countAvgTitleLength =
+  filmy.reduce((acc, title) => acc + title.tytul.length, 0) / filmy.length;
+console.log(countAvgTitleLength);
+
+//   "pytanie 2: sprawdź czy na tej liście są co najmniej dwa filmy od tego samego reżysera"
+const directorsList = filmy.map((director) => director.rezyser);
+const isDuplicated = directorsList.some(
+  (director, id) => directorsList.indexOf(director) !== id
 );
-console.log("pytanie 3: ile filmów powstało między 2000 a 2015 rokiem");
+console.log(isDuplicated);
+
+// console.log("pytanie 3: ile filmów powstało między 2000 a 2015 rokiem");
+
+const countMovies = filmy.filter(
+  (film) => film.rokProdukcji <= 2015 && film.rokProdukcji >= 2000
+);
+
+console.log(countMovies.length);
