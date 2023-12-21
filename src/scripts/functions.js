@@ -107,3 +107,41 @@ sentence(props);
 // }
 
 // sentence(props);
+
+/////
+// const x = [
+//   [1, 2],
+//   [3, 4],
+// ]; // w x jest referencja
+// const y = x; //przypisanie wartosci
+// y === x;
+
+// /// kopiowanie
+// const z = [...x];
+// x === z;
+// z[0][0] = 42;
+// z[0] = 666;
+
+const x = [
+  [1, 2],
+  [3, 4],
+];
+undefined;
+const y = x;
+undefined;
+y === x;
+true;
+const z = [...x];
+undefined;
+x === z;
+false;
+z[0][0] = 42;
+42;
+z[0] = 666;
+666;
+const dc = JSON.stringify(x);
+undefined;
+dc;
+("[[42,2],[3,4]]");
+JSON.parse(dc)(2)[(Array(2), Array(2))];
+structuredClone(x)(2)[(Array(2), Array(2))];
